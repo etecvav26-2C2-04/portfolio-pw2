@@ -1,3 +1,13 @@
+<!--
+Data: 19/03/2026
+Autor: Felipe Costa Salino - Filipe Tomaz de Aquino - João Vitor Lopes de Souza - Victor Camargo de Angelo
+Objetivo:
+
+Exercício 3 -  Calculadora Aritmética
+Faça um programa que leia dois números e um operador ("+", "-", "*" ou "/").
+O programa deve mostrar o resultado da operação.
+-->
+
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
