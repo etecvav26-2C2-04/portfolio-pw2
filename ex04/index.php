@@ -1,3 +1,19 @@
+<!--
+Data: 19/03/2026
+Autor: Felipe Costa Salino - Filipe Tomaz de Aquino - João Vitor Lopes de Souza - Victor Camargo de Angelo
+Objetivo:
+
+Exercício 4 - Triângulo Numérico
+Leia um número n e imprima n linhas no seguinte formato (exemplo para n = 6):
+
+1
+1 2
+1 2 3
+1 2 3 4
+1 2 3 4 5
+1 2 3 4 5 6
+-->
+
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
