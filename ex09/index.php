@@ -1,3 +1,17 @@
+<!--
+Data: 19/03/2026
+Autor: Felipe Costa Salino - Filipe Tomaz de Aquino - João Vitor Lopes de Souza - Victor Camargo de Angelo
+Objetivo:
+
+Exercício 9 - Média Aritmética com Função
+Crie uma função:
+
+function media($v)
+
+Que receba uma lista de números reais e retorne a média aritmética.
+-->
+
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
