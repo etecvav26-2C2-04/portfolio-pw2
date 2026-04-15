@@ -1,6 +1,6 @@
 # Exercício 3 — Pergunta de Investigação
 
-**Aluno(a):** [Seu Nome]
+**Aluno:** João Vitor Lopes de Souza
 
 ## Código (teste.php)
 
