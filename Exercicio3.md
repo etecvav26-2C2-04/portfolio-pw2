@@ -32,9 +32,9 @@ if (isset($_COOKIE["contador"])) {
 
 echo "<hr><a href='teste.php'>Atualizar Página</a>";
 ?>
+```
 
-
-Descrição das Etapas
+## Descrição das Etapas
 
 Primeira execução: A função setcookie() envia o cabeçalho HTTP Set-Cookie, mas o array $_COOKIE é populado apenas com os cookies que chegaram na requisição. Como é a primeira visita, não há cookie chegando, então exibe "Cookie ainda não disponível".
 
