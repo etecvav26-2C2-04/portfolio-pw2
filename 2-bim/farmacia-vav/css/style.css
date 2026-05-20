@@ -1,0 +1,74 @@
+/* 60% - Cor dominante */
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f4f4f4;
+    color: #333;
+}
+
+/* 30% - Cor secundária */
+header {
+    background: #2a9d8f;
+    color: white;
+    padding: 15px;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+main {
+    padding: 15px;
+}
+
+/* Cards Mobile First */
+.cards {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.card {
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+/* 10% - Cor destaque */
+button,
+.acoes a {
+    background: #e76f51;
+    color: white;
+    border: none;
+    padding: 10px;
+    text-decoration: none;
+    border-radius: 5px;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+input {
+    padding: 10px;
+}
+
+/* Desktop */
+@media (min-width: 768px) {
+
+    .cards {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .card {
+        width: 300px;
+    }
+}
