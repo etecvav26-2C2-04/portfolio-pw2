@@ -24,3 +24,30 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
 
     header("Location: index.php");
 }
+
+require_once 'includes/header.php';
+?>
+
+<h2>Cadastrar Produto</h2>
+
+<form method="POST">
+
+    <input type="text" name="nome"
+           placeholder="Nome do produto" required>
+
+    <input type="text" name="fabricante"
+           placeholder="Fabricante" required>
+
+    <input type="number" step="0.01"
+           name="preco"
+           placeholder="Preço" required>
+
+    <input type="number"
+           name="estoque"
+           placeholder="Estoque" required>
+
+    <button type="submit">Salvar</button>
+
+</form>
+
+<?php require_once 'includes/footer.php'; ?>
