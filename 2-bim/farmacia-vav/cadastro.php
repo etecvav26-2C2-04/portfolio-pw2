@@ -14,3 +14,13 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
         VALUES
         (:nome, :fabricante, :preco, :estoque)
     ");
+
+   $sql->execute([
+        ':nome' => $nome,
+        ':fabricante' => $fabricante,
+        ':preco' => $preco,
+        ':estoque' => $estoque
+    ]);
+
+    header("Location: index.php");
+}
