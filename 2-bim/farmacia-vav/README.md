@@ -5,7 +5,7 @@ Sistema CRUD desenvolvido em PHP + PDO.
 ## Tecnologias
 - PHP
 - MySQL
-- CSS3
+- CSS
 - HTML5
 
 ## Funcionalidades
@@ -15,6 +15,7 @@ Sistema CRUD desenvolvido em PHP + PDO.
 - Exclusão
 
 ## Integrantes
-- Nome 1
-- Nome 2
-- Nome 3
+- Felipe Costa
+- Filipe Tomaz
+- João Vitor Lopes
+- Victor Camargo
