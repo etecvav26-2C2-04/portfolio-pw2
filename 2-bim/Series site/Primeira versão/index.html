@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SeriesVault — Catálogo de Séries</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;500;600;700&family=Oswald:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="header" id="header">
+    <div class="logo">
+      <span class="logo-icon">▶</span>
+      <span class="logo-text">Series<span class="logo-accent">Vault</span></span>
+    </div>
+    <nav class="nav">
+      <a href="#categorias">Categorias</a>
+      <a href="#series-grid">Séries</a>
+      <a href="#ranking">Ranking</a>
+      <a href="#sobre">Sobre</a>
+    </nav>
+    <button class="hamburger" id="hamburger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </header>
+
+  <!-- MOBILE NAV -->
+  <div class="mobile-nav" id="mobileNav">
+    <a href="#categorias" onclick="closeMobileNav()">Categorias</a>
+    <a href="#series-grid" onclick="closeMobileNav()">Séries</a>
+    <a href="#ranking" onclick="closeMobileNav()">Ranking</a>
+    <a href="#sobre" onclick="closeMobileNav()">Sobre</a>
+  </div>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-bg">
+      <div class="hero-overlay"></div>
+      <div class="hero-particles" id="particles"></div>
+    </div>
+    <div class="hero-content">
+      <div class="hero-badge">🎬 Catálogo Completo 2026</div>
+      <h1 class="hero-title">Descubra as<br><span class="gradient-text">Melhores Séries</span><br>do Mundo</h1>
+      <p class="hero-subtitle">Avalie, explore e encontre sua próxima série favorita. De Breaking Bad a Regular Show — temos tudo aqui.</p>
+      <div class="hero-stats">
+        <div class="stat"><span class="stat-num" data-target="20">0</span><span class="stat-label">Séries</span></div>
+        <div class="stat"><span class="stat-num" data-target="8">0</span><span class="stat-label">Categorias</span></div>
+        <div class="stat"><span class="stat-num" data-target="1500">0</span><span class="stat-label">Avaliações</span></div>
+      </div>
+      <div class="hero-actions">
+        <a href="#series-grid" class="btn-primary">Explorar Séries</a>
+        <a href="#ranking" class="btn-secondary">Ver Ranking</a>
+      </div>
+    </div>
+    <div class="hero-scroll">
+      <span>Role para baixo</span>
+      <div class="scroll-arrow">↓</div>
+    </div>
+  </section>
+
+  <!-- CATEGORIAS -->
+  <section class="categorias" id="categorias">
+    <div class="container">
+      <h2 class="section-title">Categorias</h2>
+      <p class="section-sub">Filtre pelo gênero que você mais curte</p>
+      <div class="cats-grid">
+        <button class="cat-btn active" data-cat="todas">🎭 Todas</button>
+        <button class="cat-btn" data-cat="drama">🎭 Drama</button>
+        <button class="cat-btn" data-cat="acao">💥 +18 Violenta</button>
+        <button class="cat-btn" data-cat="animacao">🎨 Animação</button>
+        <button class="cat-btn" data-cat="anime">⚔️ Anime</button>
+        <button class="cat-btn" data-cat="comedia">😂 Comédia</button>
+        <button class="cat-btn" data-cat="crime">🔫 Crime</button>
+        <button class="cat-btn" data-cat="fantasia">🧙 Fantasia</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- SEARCH BAR -->
+  <section class="search-section">
+    <div class="container">
+      <div class="search-wrap">
+        <span class="search-icon">🔍</span>
+        <input type="text" id="searchInput" placeholder="Buscar série..." class="search-input">
+        <button class="search-clear" id="searchClear">✕</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- SÉRIES GRID -->
+  <section class="series-section" id="series-grid">
+    <div class="container">
+      <h2 class="section-title">Catálogo de Séries</h2>
+      <p class="series-count" id="seriesCount">Mostrando <span>20</span> séries</p>
+      <div class="grid" id="seriesGrid">
+
+        <!-- BREAKING BAD -->
+        <article class="card" data-cat="drama crime" data-id="bb">
+          <div class="card-theme bb-theme">
+            <div class="bb-molecule">CH₃</div>
+            <div class="bb-cactus">🌵</div>
+          </div>
+          <div class="card-badge badge-imdb">⭐ 9.5</div>
+          <div class="card-badge badge-age badge-adult">+18</div>
+          <div class="card-body">
+            <div class="card-tags">
+              <span class="tag tag-crime">Crime</span>
+              <span class="tag tag-drama">Drama</span>
+            </div>
+            <h3 class="card-title">Breaking Bad</h3>
+            <p class="card-year">2008–2013 · AMC</p>
+            <p class="card-desc">Um professor de química do ensino médio diagnosticado com câncer começa a fabricar metanfetamina para garantir o futuro financeiro de sua família — e se transforma em Heisenberg.</p>
+            <div class="card-meta">
+              <div class="meta-item"><span class="meta-label">Temporadas</span><span class="meta-val">5</span></div>
+              <div class="meta-item"><span class="meta-label">Episódios</span><span class="meta-val">62</span></div>
+              <div class="meta-item"><span class="meta-label">Onde ver</span><span class="meta-val">Netflix</span></div>
+            </div>
+            <div class="card-cast">
+              <span class="cast-label">Elenco principal:</span>
+              Bryan Cranston, Aaron Paul, Anna Gunn, Dean Norris
+            </div>
+            <div class="card-rating">
+              <span class="rating-label">Sua nota:</span>
+              <div class="stars" data-id="bb">
+                <span class="star" data-val="1">★</span>
+                <span class="star" data-val="2">★</span>
+                <span class="star" data-val="3">★</span>
+                <span class="star" data-val="4">★</span>
+                <span class="star" data-val="5">★</span>
+              </div>
+              <span class="avg-rating" id="avg-bb">–</span>
+            </div>
+            <button class="card-btn" onclick="openModal('bb')">Ver Detalhes</button>
+          </div>
+        </article>
+
+        <!-- THE BOYS -->
+        <article class="card" data-cat="acao" data-id="tb">
+          <div class="card-theme tb-theme">
+            <div class="tb-blood">💥</div>
+            <div class="tb-lightning">⚡</div>
+          </div>
+          <div class="card-badge badge-imdb">⭐ 8.7</div>
+          <div class="card-badge badge-age badge-adult">+18</div>
+          <div class="card-body">
+            <div class="card-tags">
+              <span class="tag tag-acao">+18 Violenta</span>
+              <span class="tag tag-crime">Sci-Fi</span>
+            </div>
+            <h3 class="card-title">The Boys</h3>
+            <p class="card-year">2019–presente · Prime Video</p>
+            <p class="card-desc">Em um mundo onde super-heróis são celebridades corrompidas pelo poder, um grupo de vigilantes resolve fazer justiça com as próprias mãos.</p>
+            <div class="card-meta">
+              <div class="meta-item"><span class="meta-label">Temporadas</span><span class="meta-val">5</span></div>
+              <div class="meta-item"><span class="meta-label">Episódios</span><span class="meta-val">45</span></div>
+              <div class="meta-item"><span class="meta-label">Onde ver</span><span class="meta-val">Prime Video</span></div>
+            </div>
+            <div class="card-cast">
+              <span class="cast-label">Elenco principal:</span>
+              Karl Urban, Jack Quaid, Antony Starr, Erin Moriarty
+            </div>
+            <div class="card-rating">
+              <span class="rating-label">Sua nota:</span>
+              <div class="stars" data-id="tb">
+                <span class="star" data-val="1">★</span>
+                <span class="star" data-val="2">★</span>
+                <span class="star" data-val="3">★</span>
+                <span class="star" data-val="4">★</span>
+                <span class="star" data-val="5">★</span>
+              </div>
+              <span class="avg-rating" id="avg-tb">–</span>
+            </div>
+            <button class="card-btn" onclick="openModal('tb')">Ver Detalhes</button>
+          </div>
+        </article>
+
+        <!-- INCRÍVEL MUNDO DE GUMBALL -->
+        <article class="card" data-cat="animacao comedia" data-id="gumball">
+          <div class="card-theme gumball-theme">
+            <div class="gumball-bubble">😸</div>
+            <div class="gumball-stars">✨✨✨</div>
+          </div>
+          <div class="card-badge badge-imdb">⭐ 8.4</div>
+          <div class="card-body">
+            <div class="card-tags">
+              <span class="tag tag-animacao">Animação</span>
+              <span class="tag tag-comedia">Comédia</span>
+            </div>
+            <h3 class="card-title">O Incrível Mundo de Gumball</h3>
+            <p class="card-year">2011–2019 · Cartoon Network</p>
+            <p class="card-desc">Gumball Watterson, um gato azul de 12 anos, enfrenta aventuras absurdas no cotidiano de Elmore com sua família misturada e seu melhor amigo Darwin.</p>
+            <div class="card-meta">
+              <div class="meta-item"><span class="meta-label">Temporadas</span><span class="meta-val">6</span></div>
+              <div class="meta-item"><span class="meta-label">Episódios</span><span class="meta-val">240</span></div>
+              <div class="meta-item"><span class="meta-label">Onde ver</span><span class="meta-val">Max</span></div>
+            </div>
+            <div class="card-cast">
+              <span class="cast-label">Vozes originais:</span>
+              Nicolas Cantu, Jacob Hopkins, Teresa Gallagher, Dan Russell
+            </div>
+            <div class="card-rating">
+              <span class="rating-label">Sua nota:</span>
+              <div class="stars" data-id="gumball">
+                <span class="star" data-val="1">★</span>
+                <span class="star" data-val="2">★</span>
+                <span class="star" data-val="3">★</span>
+                <span class="star" data-val="4">★</span>
+                <span class="star" data-val="5">★</span>
+              </div>
+              <span class="avg-rating" id="avg-gumball">–</span>
+            </div>
+            <button class="card-btn" onclick="openModal('gumball')">Ver Detalhes</button>
+          </div>
+        </article>
+
+        <!-- APENAS UM SHOW / REGULAR SHOW -->
+        <article class="card" data-cat="animacao comedia" data-id="rs">
+          <div class="card-theme rs-theme">
+            <div class="rs-bird">🦅</div>
+            <div class="rs-raccoon">🦝</div>
+          </div>
+          <div class="card-badge badge-imdb">⭐ 8.6</div>
+          <div class="card-body">
+            <div class="card-tags">
+              <span class="tag tag-animacao">Animação</span>
+              <span class="tag tag-comedia">Aventura</span>
+            </div>
+            <h3 class="card-title">Apenas um Show</h3>
+            <p class="card-year">2010–2017 · Cartoon Network</p>
+            <p class="card-desc">Mordecai e Rigby, funcionários de um parque, transformam tarefas cotidianas em aventuras épicas e sobrenaturais. Parece normal, mas não é.</p>
+            <div class="card-meta">
+              <div class="meta-item"><span class="meta-label">Temporadas</span><span class="meta-val">8</span></div>
+              <div class="meta-item"><span class="meta-label">Episódios</span><span class="meta-val">261</span></div>
+              <div class="meta-item"><span class="meta-label">Onde ver</span><span class="meta-val">Max</span></div>
+            </div>
+            <div class="card-cast">
+              <span class="cast-label">Vozes originais:</span>
+              JG Quintel, William Salyers, Sam Marin, Mark Hamill
+            </div>
+            <div class="card-rating">
+              <span class="rating-label">Sua nota:</span>
+              <div class="stars" data-id="rs">
+                <span class="star" data-val="1">★</span>
+                <span class="star" data-val="2">★</span>
+                <span class="star" data-val="3">★</span>
+                <span class="star" data-val="4">★</span>
+                <span class="star" data-val="5">★</span>
+              </div>
+              <span class="avg-rating" id="avg-rs">–</span>
+            </div>
+            <button class="card-btn" onclick="openModal('rs')">Ver Detalhes</button>
+          </div>
+        </article>
+
+        <!-- 12 OZ MOUSE -->
+        <article class="card" data-cat="animacao comedia" data-id="12oz">
+          <div class="card-theme oz-theme">
+            <div class="oz-scribble">?!?</div>
+            <div class="oz-cheese">🧀</div>
+          </div>
+          <div class="card-badge badge-imdb">⭐ 6.8</div>
+          <div class="card-body">
+            <div class="card-tags">
+              <span class="tag tag-animacao">Animação</span>
+              <span class="tag tag-comedia">Surreal</span>
+            </div>
+            <h3 class="card-title">12 oz. Mouse</h3>
+            <p class="card-year">2005–2020 · Adult Swim</p>
+            <p class="card-desc">Mouse Fitzgerald acorda sem memórias em uma cidade estranha. Com animação propositalmente tosca, a série é um labirinto surreal de conspirações e absurdo total.</p>
+            <div class="card-meta">
+              <div class="meta-item"><span class="meta-label">Temporadas</span><span class="meta-val">3</span></div>
+              <div class="meta-item"><span class="meta-label">Episódios</span><span class="meta-val">27</span></div>
+              <div class="meta-item"><span class="meta-label">Onde ver</span><span class="meta-val">Adult Swim</span></div>
+            </div>
+            <div class="card-cast">
+              <span class="cast-label">Criador / Voz:</span>
+              Matt Maiellaro
+            </div>
+            <div class="card-rating">
+              <span class="rating-label">Sua nota:</span>
+              <div class="stars" data-id="12oz">
+                <span class="star" data-val="1">★</span>
+                <span class="star" data-val="2">★</span>
+                <span class="star" data-val="3">★</span>
+                <span class="star" data-val="4">★</span>
+                <span class="star" data-val="5">★</span>
+              </div>
+              <span class="avg-rating" id="avg-12oz">–</span>
+            </div>
+            <button class="card-btn" onclick="openModal('12oz')">Ver Detalhes</button>
+          </div>
+        </article>
+
+        <!-- DEATH NOTE -->
+        <article class="card" data-cat="anime crime" data-id="dn">
+          <div class="card-theme dn-theme">
+            <div class="dn-notebook">📓</div>
+            <div class="dn-apple">🍎</div>
+          </div>
+          <div class="card-badge badge-imdb">⭐ 9.0</div>
+          <div class="card-badge badge-age badge-adult">+16</div>
+          <div class="card-body">
+            <div class="card-tags">
+              <span class="tag tag-anime">Anime</span>
+              <span class="tag tag-crime">Suspense</span>
+            </div>
+            <h3 class="card-title">Death Note</h3>
+            <p class="card-year">2006–2007 · Madhouse</p>
+            <p class="card-desc">Light Yagami encontra um caderno capaz de matar qualquer pessoa cujo nome seja escrito nele. O que começa como uma missão de justiça vira um duelo psicológico épico com o detetive L.</p>
+            <div class="card-meta">
+              <div class="meta-item"><span class="meta-label">Temporadas</span><span class="meta-val">1</span></div>
+              <div class="meta-item"><span class="meta-label">Episódios</span><span class="meta-val">37</span></div>
+              <div class="meta-item"><span class="meta-label">Onde ver</span><span class="meta-val">Netflix / Crunchyroll</span></div>
+            </div>
+            <div class="card-cast">
+              <span class="cast-label">Vozes originais (JP):</span>
+              Mamoru Miyano, Kappei Yamaguchi, Shido Nakamura
+            </div>
+            <div class="card-rating">
+              <span class="rating-label">Sua nota:</span>
+              <div class="stars" data-id="dn">
+                <span class="star" data-val="1">★</span>
+                <span class="star" data-val="2">★</span>
+                <span class="star" data-val="3">★</span>
+                <span class="star" data-val="4">★</span>
+                <span class="star" data-val="5">★</span>
+              </div>
+              <span class="avg-rating" id="avg-dn">–</span>
+            </div>
+            <button class="card-btn" onclick="openModal('dn')">Ver Detalhes</button>
+          </div>
+        </article>
+
+        <!-- ATTACK ON TITAN -->
+        <article class="card" data-cat="anime acao" data-id="aot">
+          <div class="card-theme aot-theme">
+            <div class="aot-titan">⚔️</div>
+            <div class="aot-wings">🦅</div>
+          </div>
+          <div class="card-badge badge-imdb">⭐ 9.0</div>
+          <div class="card-badge badge-age badge-adult">+18</div>
+          <div class="card-body">
+            <div class="card-tags">
+              <span class="tag tag-anime">Anime</span>
+              <span class="tag tag-acao">+18 Violenta</span>
+            </div>
+            <h3 class="card-title">Attack on Titan</h3>
+            <p class="card-year">2013–2023 · MAPPA / Wit Studio</p>
+            <p class="card-desc">Humanidade sobrevive atrás de gigantescas muralhas para se proteger de titãs. Quando as paredes caem, Eren Yeager jura erradicar todos os gigantes.</p>
+            <div class="card-meta">
+              <div class="meta-item"><span class="meta-label">Temporadas</span><span class="meta-val">4</span></div>
+              <div class="meta-item"><span class="meta-label">Episódios</span><span class="meta-val">94</span></div>
+              <div class="meta-item"><span class="meta-label">Onde ver</span><span class="meta-val">Crunchyroll / Netflix</span></div>
+            </div>
+            <div class="card-cast">
+              <span class="cast-label">Vozes originais (JP):</span>
+              Yuki Kaji, Marina Inoue, Yui Ishikawa
+            </div>
+            <div class="card-rating">
+              <span class="rating-label">Sua nota:</span>
+              <div class="stars" data-id="aot">
+                <span class="star" data-val="1">★</span>
+                <span class="star" data-val="2">★</span>
+                <span class="star" data-val="3">★</span>
+                <span class="star" data-val="4">★</span>
+                <span class="star" data-val="5">★</span>
+              </div>
+              <span class="avg-rating" id="avg-aot">–</span>
+            </div>
+            <button class="card-btn" onclick="openModal('aot')">Ver Detalhes</button>
+          </div>
+        </article>
+
+        <!-- PEAKY BLINDERS -->
+        <article class="card" data-cat="crime drama" data-id="pb">
+          <div class="card-theme pb-theme">
+            <div class="pb-cap">🎩</div>
+            <div class="pb-razor">⚔️</div>
+          </div>
+          <div class="card-badge badge-imdb">⭐ 8.8</div>
+          <div class="card-badge badge-age badge-adult">+18</div>
+          <div class="card-body">
+            <div class="card-tags">
+              <span class="tag tag-crime">Crime</span>
+              <span class="tag tag-drama">Drama</span>
+            </div>
+            <h3 class="card-title">Peaky Blinders</h3>
+            <p class="card-year">2013–2022 · BBC One</p>
+            <p class="card-desc">Tommy Shelby lidera a gangue Peaky Blinders em Birmingham pós-Primeira Guerra Mundial, misturando política, crime organizado e ambição sem limites.</p>
+            <div class="card-meta">
+              <div class="meta-item"><span class="meta-label">Temporadas</span><span class="meta-val">6</span></div>
+              <div class="meta-item"><span class="meta-label">Episódios</span><span class="meta-val">36</span></div>
+              <div class="meta-item"><span class="meta-label">Onde ver</span><span class="meta-val">Netflix</span></div>
+            </div>
+            <div class="card-cast">
+              <span class="cast-label">Elenco principal:</span>
+              Cillian Murphy, Tom Hardy, Helen McCrory, Paul Anderson
+            </div>
+            <div class="card-rating">
+              <span class="rating-label">Sua nota:</span>
+              <div class="stars" data-id="pb">
+                <span class="star" data-val="1">★</span>
+                <span class="star" data-val="2">★</span>
+                <span class="star" data-val="3">★</span>
+                <span class="star" data-val="4">★</span>
+                <span class="star" data-val="5">★</span>
+              </div>
+              <span class="avg-rating" id="avg-pb">–</span>
+            </div>
+            <button class="card-btn" onclick="openModal('pb')">Ver Detalhes</button>
+          </div>
+        </article>
+
+        <!-- ADVENTURE TIME -->
+        <article class="card" data-cat="animacao fantasia" data-id="at">
+          <div class="card-theme at-theme">
+            <div class="at-finn">🗡️</div>
+            <div class="at-jake">🐕</div>
+          </div>
+          <div class="card-badge badge-imdb">⭐ 8.6</div>
+          <div class="card-body">
+            <div class="card-tags">
+              <span class="tag tag-animacao">Animação</span>
+              <span class="tag tag-fantasia">Fantasia</span>
+            </div>
+            <h3 class="card-title">Hora de Aventura</h3>
+            <p class="card-year">2010–2018 · Cartoon Network</p>
+            <p class="card-desc">Finn, o único humano na Terra de Ooo, e seu cachorro mágico Jake vivem aventuras épicas em um mundo pós-apocalíptico cheio de magia, doces e drama existencial.</p>
+            <div class="card-meta">
+              <div class="meta-item"><span class="meta-label">Temporadas</span><span class="meta-val">10</span></div>
+              <div class="meta-item"><span class="meta-label">Episódios</span><span class="meta-val">283</span></div>
+              <div class="meta-item"><span class="meta-label">Onde ver</span><span class="meta-val">Max</span></div>
+            </div>
+            <div class="card-cast">
+              <span class="cast-label">Vozes originais:</span>
+              Jeremy Shada, John DiMaggio, Hynden Walch
+            </div>
+            <div class="card-rating">
+              <span class="rating-label">Sua nota:</span>
+              <div class="stars" data-id="at">
+                <span class="star" data-val="1">★</span>
+                <span class="star" data-val="2">★</span>
+                <span class="star" data-val="3">★</span>
+                <span class="star" data-val="4">★</span>
+                <span class="star" data-val="5">★</span>
+              </div>
+              <span class="avg-rating" id="avg-at">–</span>
+            </div>
+            <button class="card-btn" onclick="openModal('at')">Ver Detalhes</button>
+          </div>
+        </article>
+
+        <!-- NARUTO -->
+        <article class="card" data-cat="anime fantasia acao" data-id="naruto">
+          <div class="card-theme naruto-theme">
+            <div class="naruto-spiral">🌀</div>
+            <div class="naruto-leaf">🍃</div>
+          </div>
+          <div class="card-badge badge-imdb">⭐ 8.3</div>
+          <div class="card-body">
+            <div class="card-tags">
+              <span class="tag tag-anime">Anime</span>
+              <span class="tag tag-fantasia">Ninja</span>
+            </div>
+            <h3 class="card-title">Naruto</h3>
+            <p class="card-year">2002–2017 · Studio Pierrot</p>
+            <p class="card-desc">Naruto Uzumaki, um jovem ninja com uma raposa de 9 caudas selada dentro de si, busca se tornar o Hokage de sua aldeia. Uma jornada de superação, amizade e guerra.</p>
+            <div class="card-meta">
+              <div class="meta-item"><span class="meta-label">Temporadas</span><span class="meta-val">21</span></div>
+              <div class="meta-item"><span class="meta-label">Episódios</span><span class="meta-val">720</span></div>
+              <div class="meta-item"><span class="meta-label">Onde ver</span><span class="meta-val">Crunchyroll / Netflix</span></div>
+            </div>
+            <div class="card-cast">
+              <span class="cast-label">Vozes originais (JP):</span>
+              Junko Takeuchi, Noriaki Sugiyama, Chie Nakamura
+            </div>
+            <div class="card-rating">
+              <span class="rating-label">Sua nota:</span>
+              <div class="stars" data-id="naruto">
+                <span class="star" data-val="1">★</span>
+                <span class="star" data-val="2">★</span>
+                <span class="star" data-val="3">★</span>
+                <span class="star" data-val="4">★</span>
+                <span class="star" data-val="5">★</span>
+              </div>
+              <span class="avg-rating" id="avg-naruto">–</span>
+            </div>
+            <button class="card-btn" onclick="openModal('naruto')">Ver Detalhes</button>
+          </div>
+        </article>
