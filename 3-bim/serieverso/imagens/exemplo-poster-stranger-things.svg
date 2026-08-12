@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 450" width="300" height="450">
+  <defs>
+    <linearGradient id="g-stranger-things" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#B71C1C"/>
+      <stop offset="100%" stop-color="#0F0F1A"/>
+    </linearGradient>
+  </defs>
+  <rect width="300" height="450" fill="url(#g-stranger-things)"/>
+  <circle cx="150" cy="140" r="46" fill="#FFC857" opacity="0.9"/>
+  <polygon points="136,118 136,162 172,140" fill="#0F0F1A"/>
+  <text x="150" y="240" text-anchor="middle" font-family="Poppins, Arial, sans-serif" font-size="30" font-weight="700" fill="#F5F5F7"><tspan x="150" dy="0">Stranger</tspan><tspan x="150" dy="38">Things</tspan></text>
+  <text x="150" y="420" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="16" fill="#B8B8C7">SérieVerso</text>
+</svg>
